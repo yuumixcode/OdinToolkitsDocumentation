@@ -5,6 +5,7 @@ site_description: Odin Toolkits 的文档网站仓库。Odin Toolkits 是 Odin I
 site_author: Yuumix
 copyright: Copyright &copy; 2025 Yuumix
 
+# 顶部导航栏右侧的仓库链接
 repo_name: OdinToolkits For Unity
 repo_url: https://github.com/yuumixcode/OdinToolkits-For-Unity
 
