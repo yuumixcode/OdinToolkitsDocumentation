@@ -20,4 +20,8 @@ mkdocs:
 python:
   install:
   - requirements: requirements.txt
+
+# Build all formats
+formats: all
+
         
