@@ -1,4 +1,12 @@
-site_name: My Docs
+site_name: Odin Toolkits Documentation
+site_url: https://yuumixcode.github.io/OdinToolkitsDocumentation/
+site_description: Comprehensive documentation for Odin Toolkits.
+site_author: Yuumix
+repo_url: https://github.com/yuumixcode/OdinToolkits-For-Unity
+repo_name: Odin Toolkits
 
 theme:
   name: material
+
+nav:
+  - Home: index.md
