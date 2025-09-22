@@ -1,3 +1,5 @@
+run-name: 部署 GitHub Pages
+
 # 给定工作流将构建文档页面，适用于 GitHub Actions
 name: 构建 MkDocs-Material 页面并推送到 gh-pages 分支 🚀
 
