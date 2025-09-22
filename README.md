@@ -8,8 +8,8 @@
 </p>
 
 <p align="center">
-  <a href="https://yuumixcode.github.io/odintoolkitsdocs/">
-    <img src="https://cdn.jsdelivr.net/gh/yuumixcode/odintoolkitsdocs@main/docs/assets/logo-odintoolkits-color-noshadow.png" width="320" alt="Odin Toolkits">
+  <a href="https://www.odintoolkits.cn/">
+    <img src="https://cdn.jsdelivr.net/gh/yuumixcode/OdinToolkitsDocumentation@main/cdn-assets/logo-odintoolkits-color-noshadow.png" width="320" alt="Odin Toolkits">
   </a>
 </p>
 
@@ -28,7 +28,7 @@
 <div style="background-color: #fff8e1; border-left: 4px solid #ffb300; padding: 16px; margin: 16px 0; border-radius: 3px;">
   <h2 style="color: #e65100; margin-top: 0; margin-bottom: 12px; font-size: 16px;">⚠️ 重要声明</h2>
   <p style="color: #4e342e; margin: 0 0 10px 0; line-height: 1.5;">
-    <strong>Odin Toolkits</strong> 是由个人开发者自发开发的开源第三方扩展工具包，主要服务于中文开发者群体，也为英文界面支持预留了解决方案。
+    <strong>Odin Toolkits</strong> 是由个人开发者自发开发的开源第三方扩展工具包，主要服务于中文开发者群体，主要服务于中文开发者群体，也为支持英文界面准备了解决方案。
   </p>
   <p style="color: #4e342e; margin: 0 0 10px 0; line-height: 1.5;">
     本项目与 <strong>Sirenix 公司</strong> 及官方产品 <strong>Odin Inspector and Serializer</strong> 无任何隶属、合作或授权关系，并非官方衍生产品。
