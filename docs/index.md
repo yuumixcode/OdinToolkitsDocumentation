@@ -1,4 +1,7 @@
-# Odin Toolkits
+---
+hide:
+  - navigation
+---
 
 <p align="center">
   <a href="https://yuumixcode.github.io/odintoolkitsdocs/">
