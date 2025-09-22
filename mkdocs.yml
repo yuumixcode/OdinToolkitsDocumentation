@@ -1,9 +1,11 @@
 site_name: Odin Toolkits Documentation
-site_url: https://yuumixcode.github.io/OdinToolkitsDocumentation/
-site_description: Comprehensive documentation for Odin Toolkits.
-site_author: Yuumix
+site_url: https://www.odintoolkits.cn/
+site_description: Odin Toolkits 的文档网站仓库。Odin Toolkits 是 Odin Inspector and Serializer 的第三方扩展工具包。
 
-repo_name: Odin Toolkits
+site_author: Yuumix
+copyright: Copyright &copy; 2025 Yuumix
+
+repo_name: OdinToolkits For Unity
 repo_url: https://github.com/yuumixcode/OdinToolkits-For-Unity
 
 theme:
@@ -36,6 +38,10 @@ theme:
 
   # Setup -> language - 语言
   language: zh
+
+  # Setup -> logo - 网站图标
+  logo: https://cdn.jsdelivr.net/gh/yuumixcode/OdinToolkitsDocumentation@main/cdn-assets/logo-odintoolkits-color-noshadow.png
+  favicon: https://cdn.jsdelivr.net/gh/yuumixcode/OdinToolkitsDocumentation@main/cdn-assets/logo-odintoolkits-color-noshadow.svg
 
   features:
     - content.tooltips # 启用工具提示，如果要 Setup - colors - 配色方案 中的 accent 生效，必须启用此项

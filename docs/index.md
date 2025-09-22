@@ -3,6 +3,8 @@ hide:
   - navigation
 ---
 
+# Odin Toolkits
+
 <p align="center">
   <a href="https://yuumixcode.github.io/odintoolkitsdocs/">
     <img src="https://cdn.jsdelivr.net/gh/yuumixcode/odintoolkitsdocs@main/docs/assets/logo-odintoolkits-color-noshadow.png" width="320" alt="Odin Toolkits">

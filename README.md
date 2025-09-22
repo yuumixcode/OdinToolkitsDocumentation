@@ -2,7 +2,8 @@
 
 <p align = "center">
   <strong>
-  本仓库为 Odin Toolkits 的官方文档仓库
+  本仓库为 Odin Toolkits 的官方文档仓库<br/ >
+  <a href="https://github.com/yuumixcode/OdinToolkits-For-Unity">跳转 Odin Toolkits 项目仓库网页</a>
   </strong>
 </p>
 
