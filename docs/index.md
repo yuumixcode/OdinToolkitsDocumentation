@@ -1,3 +1,8 @@
+---
+hide:
+  - navigation
+---
+
 # Odin Toolkits
 
 <p align="center">
