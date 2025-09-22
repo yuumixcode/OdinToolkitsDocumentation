@@ -70,12 +70,13 @@ theme:
     - announce.dismiss
     
 plugins:
-  # Setup -> search
-  - search # 启用搜索功能
-  # Setup -> blog
-  - blog # 启用博客功能
   # Setup -> tags
   - tags
+  # Setup -> blog
+  - blog: # 启用博客功能
+      authors_file: "{blog}/.authors.yml"
+  # Setup -> search
+  - search # 启用搜索功能
 
 extra_css:
   - extra/stylesheets/customFonts.css # 自定义字体
