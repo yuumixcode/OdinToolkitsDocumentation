@@ -34,8 +34,8 @@ theme:
 
   # Setup -> fonts - 字体
   font:
-    text: JetBrains Mono
-    code: JetBrains Mono
+    text: Roboto
+    code: Roboto
 
   # Setup -> language - 语言
   language: zh
@@ -81,7 +81,7 @@ plugins:
 
 extra_css:
   - extra/stylesheets/customFonts.css # 自定义字体
-  - https://static.zeoseven.com/zsft/292/main/result.css # 自定义字体-霞鹜文楷
+  # - https://static.zeoseven.com/zsft/292/main/result.css # 自定义字体-霞鹜文楷
 
 markdown_extensions:
   # Admonitions 告诫 ---
