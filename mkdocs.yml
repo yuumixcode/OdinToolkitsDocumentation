@@ -1,6 +1,6 @@
 site_name: Odin Toolkits Documentation
 site_url: https://www.odintoolkits.cn/
-site_description: Odin Toolkits 的文档网站仓库。Odin Toolkits 是 Odin Inspector and Serializer 的第三方扩展工具包。
+site_description: Odin Toolkits 的文档网站仓库。Odin Toolkits 是 Odin Inspector and Serializer 的第三方扩展工具集。
 
 site_author: Yuumix
 copyright: Copyright &copy; 2025 Yuumix
@@ -41,8 +41,8 @@ theme:
   language: zh
 
   # Setup -> logo - 网站图标
-  logo: https://cdn.jsdelivr.net/gh/yuumixcode/OdinToolkitsDocumentation@main/cdn-assets/logo-odintoolkits-color-noshadow.webp
-  favicon: https://cdn.jsdelivr.net/gh/yuumixcode/OdinToolkitsDocumentation@main/cdn-assets/logo-odintoolkits-color-noshadow.svg
+  logo: https://cdn.jsdelivr.net/gh/yuumixcode/OdinToolkitsDocumentation@main/cdn-assets/logo-color-noshadow.webp
+  favicon: https://cdn.jsdelivr.net/gh/yuumixcode/OdinToolkitsDocumentation@main/cdn-assets/logo-color-noshadow.svg
   
   # Overrides
   custom_dir: docs/overrides
@@ -136,6 +136,7 @@ nav:
   - CONTRIBUTING: CONTRIBUTING.md
   - 使用手册:
       - 一键生成 SO 工具: contents/manuals/QuickGenerateSO.md
+      - 脚本文档生成器: contents/manuals/ScriptDocGeneratorUsage.md
   - 标签总览:
       - blog/tags.md
   - 开发者博客:
