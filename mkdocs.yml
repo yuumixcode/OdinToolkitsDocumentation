@@ -137,6 +137,30 @@ nav:
   - 使用手册:
       - 一键生成 SO 工具: contents/manuals/QuickGenerateSO.md
       - 脚本文档生成器: contents/manuals/ScriptDocGeneratorUsage.md
+  - Scripting API:
+      - Script Doc Generator:
+        - ChineseSummaryMenuItems: contents/scriptingapi/scriptdocgenerator/ChineseSummaryMenuItems.md
+        - CnAPIDocGeneratorSO: contents/scriptingapi/scriptdocgenerator/CnAPIDocGeneratorSO.md
+        - ConstructorAnalysisData: contents/scriptingapi/scriptdocgenerator/ConstructorAnalysisData.md
+        - ConstructorAnalysisDataComparer: contents/scriptingapi/scriptdocgenerator/ConstructorAnalysisDataComparer.md
+        - DocGeneratorSO: contents/scriptingapi/scriptdocgenerator/DocGeneratorSO.md
+        - EventAnalysisData: contents/scriptingapi/scriptdocgenerator/EventAnalysisData.md
+        - EventAnalysisDataComparer: contents/scriptingapi/scriptdocgenerator/EventAnalysisDataComparer.md
+        - FieldAnalysisData: contents/scriptingapi/scriptdocgenerator/FieldAnalysisData.md
+        - FieldAnalysisDataComparer: contents/scriptingapi/scriptdocgenerator/FieldAnalysisDataComparer.md
+        - ISummaryAttribute: contents/scriptingapi/scriptdocgenerator/ISummaryAttribute.md
+        - MemberAnalysisData: contents/scriptingapi/scriptdocgenerator/MemberAnalysisData.md
+        - MemberAnalysisDataComparer: contents/scriptingapi/scriptdocgenerator/MemberAnalysisDataComparer.md
+        - MethodAnalysisData: contents/scriptingapi/scriptdocgenerator/MethodAnalysisData.md
+        - MethodAnalysisDataComparer: contents/scriptingapi/scriptdocgenerator/MethodAnalysisDataComparer.md
+        - PropertyAnalysisData: contents/scriptingapi/scriptdocgenerator/PropertyAnalysisData.md
+        - PropertyAnalysisDataComparer: contents/scriptingapi/scriptdocgenerator/PropertyAnalysisDataComparer.md
+        - ScriptDocGenInspectorSO: contents/scriptingapi/scriptdocgenerator/ScriptDocGenInspectorSO.md
+        - SummaryAttributeConverter: contents/scriptingapi/scriptdocgenerator/SummaryAttributeConverter.md
+        - TypeAnalyzerExtensions: contents/scriptingapi/scriptdocgenerator/TypeAnalyzerExtensions.md
+        - TypeAnalyzerUtility: contents/scriptingapi/scriptdocgenerator/TypeAnalyzerUtility.md
+        - TypeCategory: contents/scriptingapi/scriptdocgenerator/TypeCategory.md
+        - TypesConfigSO: contents/scriptingapi/scriptdocgenerator/TypesConfigSO.md
   - 标签总览:
       - blog/tags.md
   - 开发者博客:
