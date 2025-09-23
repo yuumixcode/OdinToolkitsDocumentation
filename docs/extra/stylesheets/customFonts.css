@@ -29,6 +29,6 @@
 }
 
 :root {
-  --md-text-font: "JetBrains Mono Only English", "LXGW WenKai";
+  --md-text-font: "JetBrains Mono Only English"; /*"LXGW WenKai";*/
   --md-code-font: "JetBrains Mono All";
 }
