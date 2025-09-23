@@ -6,7 +6,7 @@ comments: true
 
 <p align="center">
   <a href="https://www.odintoolkits.cn/">
-    <img src="https://cdn.jsdelivr.net/gh/yuumixcode/OdinToolkitsDocumentation@main/cdn-assets/logo-odintoolkits-color-noshadow.png" width="320" alt="Odin Toolkits">
+    <img src="https://cdn.jsdelivr.net/gh/yuumixcode/OdinToolkitsDocumentation@main/cdn-assets/logo-odintoolkits-color-noshadow.webp" width="320" alt="Odin Toolkits Logo">
   </a>
 </p>
 
