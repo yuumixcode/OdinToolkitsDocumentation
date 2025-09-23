@@ -106,3 +106,19 @@ h4 {
   border-radius: 10px !important;
   box-shadow: none ; 
 }
+
+/* ReadTheDocs 浮动面板样式重置 - 使用霞鹜文楷字体 */
+.rst-versions {
+  font-family: "LXGW WenKai", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif !important;
+  font-size: 14px !important;
+  box-shadow: initial !important;
+  border-radius: initial !important;
+  padding: initial !important;
+}
+
+.rst-versions * {
+  font-family: inherit !important;
+  font-size: inherit !important;
+  box-shadow: initial !important;
+  border-radius: initial !important;
+}
