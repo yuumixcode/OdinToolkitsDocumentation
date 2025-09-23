@@ -34,8 +34,8 @@ theme:
 
   # Setup -> fonts - 字体
   font:
-    text: Roboto
-    code: Roboto
+    text: Noto Sans SC
+    code: Roboto Mono
 
   # Setup -> language - 语言
   language: zh
@@ -161,6 +161,10 @@ nav:
         - TypeAnalyzerUtility: contents/scriptingapi/scriptdocgenerator/TypeAnalyzerUtility.md
         - TypeCategory: contents/scriptingapi/scriptdocgenerator/TypeCategory.md
         - TypesConfigSO: contents/scriptingapi/scriptdocgenerator/TypesConfigSO.md
+      - Modules:
+          - ScriptDocGenerator:
+              - Editor:
+                  - DocGeneratorSO: scriptingapi/modules/scriptdocgenerator/editor/DocGeneratorSO.md
   - 标签总览:
       - blog/tags.md
   - 开发者博客:

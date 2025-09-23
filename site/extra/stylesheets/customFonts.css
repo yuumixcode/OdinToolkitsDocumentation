@@ -29,11 +29,14 @@
 }
 
 :root {
-  --md-text-font: "LXGW WenKai", "Maple Mono Normal Only Chinese";
+  --md-text-font:
+    /* "JetBrains Mono Only English", */
+    "Maple Mono Normal Only Chinese",
+    "LXGW WenKai";
   --md-code-font: "Maple Mono Normal Only Chinese";
 
   /* 字体大小变量 - 在这里统一设置大小 */
-  --base-font-size: 10px;
+  --base-font-size: 20px;
   --code-font-size: 16px;
   /* 代码字体大小 */
 }
