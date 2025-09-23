@@ -55,7 +55,7 @@ theme:
     - navigation.tracking # 锚点追踪，地址栏中的 URL 会自动更新为活动锚点，便于分享
     - navigation.tabs # 顶部标签导航
     # - navigation.tabs.sticky # 与 navigation.tabs 一起使用，启用表示顶部标签导航栏在滚动时保持可见，一般关闭
-    - navigation.sections # 侧边栏变为章节，文档较少时效果更好
+    # - navigation.sections # 侧边栏变为章节，文档较少时效果更好
     # - navigation.expand # 启用表示侧边栏分组默认展开
     - navigation.prune # 导航修剪，对于大型文档站点效果更好，不能与 navigation.expand 一起使用
     - navigation.indexes # 章节索引，让用于分类的目录可以指向一份文档，对于概述非常有用，不能和 toc.integrate 一起使用
