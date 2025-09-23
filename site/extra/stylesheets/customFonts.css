@@ -29,23 +29,27 @@
 }
 
 :root {
-  --md-text-font:
-    /* "JetBrains Mono Only English", */
-    "Maple Mono Normal Only Chinese",
-    "LXGW WenKai";
+  --md-text-font: "JetBrains Mono Only English", "LXGW WenKai";
   --md-code-font: "Maple Mono Normal Only Chinese";
 
   /* 字体大小变量 - 在这里统一设置大小 */
-  --base-font-size: 20px;
+  --base-font-size: 16px;
   --code-font-size: 16px;
   /* 代码字体大小 */
 }
 
 /* 应用字体大小 */
-body {
+body, .md-typeset {
   font-family: var(--md-text-font);
-  font-size: var(--base-font-size);
+  font-size: 14px;
 }
+
+/* 左侧导航目录 */
+.md-nav--primary .md-nav__link {
+  font-size: 12px;
+}
+
+/* 右侧目录(TOC)样式已移至tocStyles.css */
 
 /* 代码区域字体设置 */
 code,

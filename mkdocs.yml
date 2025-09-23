@@ -17,17 +17,17 @@ theme:
       toggle:
         icon: material/brightness-auto
         name: 切换到浅色模式
-    - media: "(prefers-color-scheme: light)" # 浅色模式
-      scheme: default # default 表示浅色模式
+    - media: "(prefers-color-scheme: light)" # 浅色模式 - mkdocs-material 默认
+      scheme: default
       primary: indigo
-      accent: orange
+      accent: light blue
       toggle:
         icon: material/weather-night
         name: 切换到深色模式
-    - media: "(prefers-color-scheme: dark)" # 深色模式
-      scheme: slate # slate 表示深色模式，基于浅色模式修改
-      primary: black
-      accent: indigo
+    - media: "(prefers-color-scheme: dark)" # 深色模式 - mkdocs-material 默认
+      scheme: slate
+      primary: green
+      accent: deep orange
       toggle:
         icon: material/weather-sunny
         name: 自动遵循系统偏好
@@ -69,6 +69,8 @@ theme:
     - search.share # 搜索分享
     # announcement
     - announce.dismiss
+    # footer
+    - navigation.footer
     
 plugins:
   # Setup -> tags
@@ -79,8 +81,12 @@ plugins:
   # Setup -> search
   - search # 启用搜索功能
 
+
+
 extra_css:
   - extra/stylesheets/customFonts.css # 自定义字体
+  - extra/stylesheets/tocStyles.css # TOC目录样式
+  - extra/stylesheets/tableStyles.css # 表格样式
   - https://static.zeoseven.com/zsft/292/main/result.css # 自定义字体-霞鹜文楷
 
 markdown_extensions:
@@ -129,6 +135,15 @@ markdown_extensions:
   - abbr
   - toc:
       permalink: true
+
+extra:
+  social:
+    - icon: fontawesome/solid/mail-bulk
+      link: mailto:<zeriying@gmail.com>
+      name: 邮件
+    - icon: fontawesome/brands/github
+      link: https://github.com/yuumixcode
+      name: yuumix code 
 
 nav:
   - README: index.md

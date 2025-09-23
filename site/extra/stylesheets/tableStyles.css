@@ -1,0 +1,40 @@
+/* 表格样式 - 让表格占满内容区域宽度 */
+
+/* 针对Markdown生成的表格 */
+.md-typeset table {
+  width: 100%; /* 设置表格宽度为100% */
+  display: table; /* 确保表格以表格形式显示 */
+  table-layout: fixed; /* 固定表格布局，使列宽均匀分布 */
+}
+
+/* 表格单元格样式 */
+.md-typeset table th,
+.md-typeset table td {
+  min-width: unset; /* 覆盖默认的最小宽度 */
+  padding: 0.5rem 1rem; /* 保持适当的内边距 */
+  overflow-wrap: break-word; /* 允许长文本在单元格内换行 */
+  word-break: break-word; /* 在必要时允许单词内断行 */
+}
+
+/* 表格容器，确保响应式布局 */
+.md-typeset__scrollwrap {
+  margin: 1em 0; /* 保持上下边距 */
+  overflow-x: auto; /* 在小屏幕上允许水平滚动 */
+}
+
+/* 表格标题行样式 */
+.md-typeset table th {
+  background-color: var(--md-primary-fg-color--light, #7094FF); /* 使用主题颜色变量 */
+  color: var(--md-primary-bg-color, #ffffff); /* 使用主题颜色变量 */
+  font-weight: bold;
+}
+
+/* 表格交替行颜色 */
+.md-typeset table tr:nth-child(even) {
+  background-color: var(--md-code-bg-color, #f5f5f5); /* 使用主题颜色变量 */
+}
+
+/* 表格悬停效果 */
+.md-typeset table tr:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+}
