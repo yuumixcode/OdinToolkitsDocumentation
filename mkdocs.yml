@@ -41,7 +41,7 @@ theme:
   language: zh
 
   # Setup -> logo - 网站图标
-  logo: https://cdn.jsdelivr.net/gh/yuumixcode/OdinToolkitsDocumentation@main/cdn-assets/logo-odintoolkits-color-noshadow.png
+  logo: https://cdn.jsdelivr.net/gh/yuumixcode/OdinToolkitsDocumentation@main/cdn-assets/logo-odintoolkits-color-noshadow.webp
   favicon: https://cdn.jsdelivr.net/gh/yuumixcode/OdinToolkitsDocumentation@main/cdn-assets/logo-odintoolkits-color-noshadow.svg
   
   # Overrides
@@ -81,7 +81,7 @@ plugins:
 
 extra_css:
   - extra/stylesheets/customFonts.css # 自定义字体
-  # - https://static.zeoseven.com/zsft/292/main/result.css # 自定义字体-霞鹜文楷
+  - https://static.zeoseven.com/zsft/292/main/result.css # 自定义字体-霞鹜文楷
 
 markdown_extensions:
   # Admonitions 告诫 ---
