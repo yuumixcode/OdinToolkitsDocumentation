@@ -3,11 +3,10 @@ date: 2025-09-24
 title: Unity SerializeReferenceAttribute 深度解析：多态序列化的实践指南
 description: 全面解析 Unity SerializeReferenceAttribute 特性的使用方法、实现原理和最佳实践，深入探讨多态序列化在游戏开发中的应用场景
 categories:
-  - Unity开发
+  - Unity 
   - 序列化系统
-  - C#编程
+  - csharp
 tags:
-  - Unity
   - 序列化
 authors: 
   - Yuumix
