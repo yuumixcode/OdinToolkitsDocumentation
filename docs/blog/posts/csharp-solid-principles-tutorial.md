@@ -194,6 +194,7 @@ public class BadPlayerController : MonoBehaviour
 ```
 
 这个类违反了 SRP，因为它承担了多个职责：
+
 - 移动控制
 - 射击系统
 - 健康管理
