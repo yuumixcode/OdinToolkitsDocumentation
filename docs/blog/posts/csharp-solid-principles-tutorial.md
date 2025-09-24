@@ -1,12 +1,12 @@
 ---
-date: 2025-01-15
+date: 2025-09-24
 categories:
+  - Unity
   - 教程
 tags:
-  - C#
+  - csharp
   - SOLID
   - 设计模式
-  - Unity
   - 最佳实践
 authors:
   - Yuumix
@@ -2618,7 +2618,8 @@ SOLID 原则是建设高质量 Unity 项目的基石。通过本文的学习，�
 
 - [Unity 官方文档](https://docs.unity3d.com/)
 - [Odin Inspector 文档](https://odininspector.com/)
-- [Clean Code 书籍](https://www.amazon.com/Clean-Code-Handbook-Software-Craftsmanship/dp/0132350882)
+- [Unity 官方 Clean Code 电子书：C# 代码风格指南](https://unity.com/resources/create-code-c-sharp-style-guide-e-book)
+- [Unity 官方设计模式和 SOLID 原则电子书](https://unity.com/resources/design-patterns-solid-ebook)
 - [Martin Fowler 的设计文章](https://martinfowler.com/)
 
 ---
