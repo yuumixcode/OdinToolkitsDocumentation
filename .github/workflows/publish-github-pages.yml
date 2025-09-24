@@ -41,9 +41,9 @@ jobs:
           path: ~/.cache
           restore-keys: |
             mkdocs-material-
-      - name: 安装 MkDocs-Material 的依赖项
+      - name: 安装 requirements.txt 中的依赖项
         run: |
-          pip install mkdocs-material
+          pip install -r requirements.txt
       - name: 检查当前环境 pip 安装的所有包
         run: |
           pip list

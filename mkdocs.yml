@@ -80,8 +80,12 @@ plugins:
       authors_file: "{blog}/.authors.yml"
   # Setup -> search
   - search # 启用搜索功能
-
-
+  # Document dates 文档日期显示
+  - document-dates:
+      position: bottom
+      type: date
+      date_format: '%Y-%m-%d'
+      show_author: true
 
 extra_css:
   - extra/stylesheets/customFonts.css # 自定义字体
@@ -137,6 +141,13 @@ markdown_extensions:
       permalink: true
 
 extra:
+  alternate:
+    - name: 中文
+      link: "javascript:translate.changeLanguage('chinese_simplified');"
+      lang: zh
+    - name: English
+      link: "javascript:translate.changeLanguage('english');"
+      lang: en
   social:
     - icon: fontawesome/solid/mail-bulk
       link: mailto:<zeriying@gmail.com>
@@ -184,4 +195,4 @@ nav:
       - blog/tags.md
   - 开发者博客:
       - blog/index.md
-  - 购买 Odin Inspector 前必读: contents/AboutOdinInspector.md
+  - 关于 Odin Inspector: contents/AboutOdinInspector.md

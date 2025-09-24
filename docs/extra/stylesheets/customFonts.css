@@ -13,7 +13,7 @@
 }
 
 @font-face {
-  font-family: "JetBrains Mono All";
+  font-family: "JetBrains Mono Code";
   src: url("../fonts/JetBrainsMono-Regular.woff2") format("woff2");
   font-display: swap;
   /* 禁用连字 */
@@ -22,10 +22,10 @@
 
 :root {
   --md-text-font: "JetBrains Mono Only English", "LXGW WenKai";
-  --md-code-font: "JetBrains Mono All";
+  --md-code-font: "JetBrains Mono Code";
 
   /* 字体大小变量 - 在这里统一设置大小 */
-  --base-font-size: 15px;
+  --base-font-size: 14px;
   --code-font-size: 14px;
   /* 代码字体大小 */
 }
@@ -105,20 +105,4 @@ h4 {
 .md-typeset .highlight pre {
   border-radius: 10px !important;
   box-shadow: none ; 
-}
-
-/* ReadTheDocs 浮动面板样式重置 - 使用霞鹜文楷字体 */
-.rst-versions {
-  font-family: "LXGW WenKai", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif !important;
-  font-size: 14px !important;
-  box-shadow: initial !important;
-  border-radius: initial !important;
-  padding: initial !important;
-}
-
-.rst-versions * {
-  font-family: inherit !important;
-  font-size: inherit !important;
-  box-shadow: initial !important;
-  border-radius: initial !important;
 }
