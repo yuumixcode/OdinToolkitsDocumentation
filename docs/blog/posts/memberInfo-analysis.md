@@ -14,7 +14,7 @@ author:
 
 分析 `MemberInfo` 包含的成员，查看可以通过 `MemberInfo` 获取的信息。
 
-<!--more-->
+<!-- more -->
 
 ## `public virtual IEnumerable<CustomAttributeData> CustomAttributes`
 
