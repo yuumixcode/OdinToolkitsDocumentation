@@ -1760,6 +1760,7 @@ public class PerformanceMonitor : MonoBehaviour
 | 定义级 | 标准化开发、质量保证 | 大型项目、长期维护 | 建立质量体系 |
 | 量化级 | 数据驱动、性能监控 | 商业产品、高要求 | 优化关键指标 |
 | 优化级 | 持续改进、自动化 | 企业级、多项目 | 平台化建设 |
+
     }
     
     private void OnItemsChanged(List<ItemData> items)
@@ -1821,7 +1822,7 @@ public class InventoryItemView : MonoBehaviour
     [SerializeField] private Text nameText;
     [SerializeField] private Text quantityText;
     [SerializeField] private Button useButton;
-    
+
     public event System.Action<ItemData> OnItemClicked;
     
     private ItemData itemData;
@@ -1845,6 +1846,7 @@ public class InventoryItemView : MonoBehaviour
         useButton.interactable = data.IsUsable;
     }
 }
+
 ```
 
 ### QFramework 的性能优化最佳实践

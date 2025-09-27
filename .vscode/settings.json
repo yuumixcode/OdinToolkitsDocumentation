@@ -1,8 +1,8 @@
 {
-    "yaml.schemas": {
-        "https://squidfunk.github.io/mkdocs-material/schema.json": [
-            "mkdocs.yml",
-            "file:///Users/yuumi/OpenSource/OdinToolkitsDocumentation/mkdocs.yml"
-        ]
-    }
+  "yaml.schemas": {
+    "https://squidfunk.github.io/mkdocs-material/schema.json": [
+      "mkdocs.yml",
+      "file:///Users/yuumi/OpenSource/OdinToolkitsDocumentation/mkdocs.yml"
+    ]
+  }
 }

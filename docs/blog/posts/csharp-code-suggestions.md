@@ -16,17 +16,13 @@ C# 是一种非常灵活且功能丰富的语言，它提供了属性、方法�
 
 <!-- more -->
 
-## 属性与方法的使用时机
+## 属性与方法的使用时机推荐
 
 在C#开发中，属性和方法都可以用于访问对象的数据，但它们有不同的语义含义和使用场景。正确区分它们的使用时机对于编写高质量的代码至关重要。
 
-### 推荐的编码规范
+### 1. 使用属性的情况
 
-基于业界最佳实践，建议采用以下规范：
-
-#### 1. 使用属性的情况
-
-##### 1.1 对象状态和特征
+#### 1.1 对象状态和特征
 
 ```csharp
 // 正确：表示对象的基本特征
@@ -38,7 +34,7 @@ public class Person
 }
 ```
 
-##### 1.2 简单计算属性
+#### 1.2 简单计算属性
 
 ```csharp
 // 正确：简单、高性能的计算
@@ -50,7 +46,7 @@ public class Rectangle
 }
 ```
 
-##### 1.3 需要轻量级验证的字段
+#### 1.3 需要轻量级验证的字段
 
 ```csharp
 // 正确：简单的验证逻辑
@@ -63,9 +59,9 @@ public string Email
 }
 ```
 
-#### 2. 使用方法的情况
+### 2. 使用方法的情况
 
-##### 2.1 复杂业务逻辑
+#### 2.1 复杂业务逻辑
 
 ```csharp
 // 正确：复杂计算应使用方法
@@ -76,7 +72,7 @@ public OrderSummary GenerateOrderSummary(OrderFilter filter)
 }
 ```
 
-##### 2.2 有副作用的操作
+#### 2.2 有副作用的操作
 
 ```csharp
 // 正确：会改变系统状态的操作使用方法
@@ -87,7 +83,7 @@ public bool SendEmail(Notification notification)
 }
 ```
 
-##### 2.3 需要多个参数
+#### 2.3 需要多个参数
 
 ```csharp
 // 正确：需要多个输入参数时使用方法
@@ -97,7 +93,7 @@ public Customer CreateCustomer(string name, string email, string phone, Address 
 }
 ```
 
-##### 2.4 可能抛出异常的操作
+#### 2.4 可能抛出异常的操作
 
 ```csharp
 // 正确：可能失败的操作使用方法
@@ -111,9 +107,9 @@ public Product FindProduct(string sku)
 }
 ```
 
-#### 3. 特殊情况处理
+### 3. 特殊情况处理
 
-##### 3.1 只读状态
+#### 3.1 只读状态
 
 对于只读状态，仍然使用属性而非方法：
 
@@ -125,7 +121,7 @@ public DateTime CreatedAt { get; } = DateTime.Now;
 public DateTime GetCreatedAt() => _createdAt;
 ```
 
-##### 3.2 延迟加载
+#### 3.2 延迟加载
 
 对于延迟加载的场景，可以使用属性：
 

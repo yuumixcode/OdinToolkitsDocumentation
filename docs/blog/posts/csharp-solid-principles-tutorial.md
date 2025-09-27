@@ -1580,7 +1580,7 @@ public class Player : MonoBehaviour, IMoveable, ICombatable, IItemUser, IQuestRe
 
 依赖倒置原则包含两个重要概念：
 1. **高层模块不应该依赖于低层模块，两者都应该依赖于抽象**
-2. **抽象不应该依赖于细节，细节应该依赖于抽象**
+2. **抽象不应该依赖于实现，实现应该依赖于抽象**
 
 这个原则的核心是通过抽象（接口或抽象类）来降低模块间的耦合度。
 
@@ -2076,9 +2076,9 @@ public class PlayerHealthChangedEvent
 
 !!! tip "Odin Inspector 的 DIP 支持"
     - 使用 `[ShowInInspector]` 显示注入的依赖服务
-    - 使用 `[Button]` 提供服务测试功能
-    - 使用 `[ReadOnly]` 防止意外修改注入的服务
-    - 使用 `[Title]` 组织不同类型的依赖关系
+        - 使用 `[Button]` 提供服务测试功能
+        - 使用 `[ReadOnly]` 防止意外修改注入的服务
+        - 使用 `[Title]` 组织不同类型的依赖关系
 
 ## Unity 实战应用案例：角色系统重构
 

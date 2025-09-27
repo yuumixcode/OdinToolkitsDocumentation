@@ -43,7 +43,7 @@ theme:
   # Setup -> logo - 网站图标
   logo: https://cdn.jsdelivr.net/gh/yuumixcode/OdinToolkitsDocumentation@main/cdn-assets/logo-color-noshadow.webp
   favicon: https://cdn.jsdelivr.net/gh/yuumixcode/OdinToolkitsDocumentation@main/cdn-assets/logo-color-noshadow.svg
-  
+
   # Overrides
   custom_dir: docs/overrides
 
@@ -71,7 +71,7 @@ theme:
     - announce.dismiss
     # footer
     - navigation.footer
-    
+
 plugins:
   # Setup -> tags
   - tags
@@ -84,7 +84,7 @@ plugins:
   - document-dates:
       position: bottom
       type: date
-      date_format: '%Y-%m-%d'
+      date_format: "%Y-%m-%d"
       show_author: true
 
 extra_css:
@@ -154,7 +154,7 @@ extra:
       name: 邮件
     - icon: fontawesome/brands/github
       link: https://github.com/yuumixcode
-      name: yuumix code 
+      name: yuumix code
 
 nav:
   - README: index.md
@@ -162,31 +162,33 @@ nav:
   - CONTRIBUTING: CONTRIBUTING.md
   - 使用手册:
       - 一键生成 SO 工具: contents/manuals/QuickGenerateSO.md
-      - 脚本文档生成器: contents/manuals/ScriptDocGeneratorUsage.md
+      - 脚本文档生成器:
+          - 使用指南: contents/manuals/ScriptDocGeneratorUsage.md
+          - 类型解析器支持情况总览: manuals/TypeAnalysisOverview.md
   - Scripting API:
       - Script Doc Generator:
-        - ChineseSummaryMenuItems: contents/scriptingapi/scriptdocgenerator/ChineseSummaryMenuItems.md
-        - CnAPIDocGeneratorSO: contents/scriptingapi/scriptdocgenerator/CnAPIDocGeneratorSO.md
-        - ConstructorAnalysisData: contents/scriptingapi/scriptdocgenerator/ConstructorAnalysisData.md
-        - ConstructorAnalysisDataComparer: contents/scriptingapi/scriptdocgenerator/ConstructorAnalysisDataComparer.md
-        - DocGeneratorSO: contents/scriptingapi/scriptdocgenerator/DocGeneratorSO.md
-        - EventAnalysisData: contents/scriptingapi/scriptdocgenerator/EventAnalysisData.md
-        - EventAnalysisDataComparer: contents/scriptingapi/scriptdocgenerator/EventAnalysisDataComparer.md
-        - FieldAnalysisData: contents/scriptingapi/scriptdocgenerator/FieldAnalysisData.md
-        - FieldAnalysisDataComparer: contents/scriptingapi/scriptdocgenerator/FieldAnalysisDataComparer.md
-        - ISummaryAttribute: contents/scriptingapi/scriptdocgenerator/ISummaryAttribute.md
-        - MemberAnalysisData: contents/scriptingapi/scriptdocgenerator/MemberAnalysisData.md
-        - MemberAnalysisDataComparer: contents/scriptingapi/scriptdocgenerator/MemberAnalysisDataComparer.md
-        - MethodAnalysisData: contents/scriptingapi/scriptdocgenerator/MethodAnalysisData.md
-        - MethodAnalysisDataComparer: contents/scriptingapi/scriptdocgenerator/MethodAnalysisDataComparer.md
-        - PropertyAnalysisData: contents/scriptingapi/scriptdocgenerator/PropertyAnalysisData.md
-        - PropertyAnalysisDataComparer: contents/scriptingapi/scriptdocgenerator/PropertyAnalysisDataComparer.md
-        - ScriptDocGenInspectorSO: contents/scriptingapi/scriptdocgenerator/ScriptDocGenInspectorSO.md
-        - SummaryAttributeConverter: contents/scriptingapi/scriptdocgenerator/SummaryAttributeConverter.md
-        - TypeAnalyzerExtensions: contents/scriptingapi/scriptdocgenerator/TypeAnalyzerExtensions.md
-        - TypeAnalyzerUtility: contents/scriptingapi/scriptdocgenerator/TypeAnalyzerUtility.md
-        - TypeCategory: contents/scriptingapi/scriptdocgenerator/TypeCategory.md
-        - TypesConfigSO: contents/scriptingapi/scriptdocgenerator/TypesConfigSO.md
+          - ChineseSummaryMenuItems: contents/scriptingapi/scriptdocgenerator/ChineseSummaryMenuItems.md
+          - CnAPIDocGeneratorSO: contents/scriptingapi/scriptdocgenerator/CnAPIDocGeneratorSO.md
+          - ConstructorAnalysisData: contents/scriptingapi/scriptdocgenerator/ConstructorAnalysisData.md
+          - ConstructorAnalysisDataComparer: contents/scriptingapi/scriptdocgenerator/ConstructorAnalysisDataComparer.md
+          - DocGeneratorSO: contents/scriptingapi/scriptdocgenerator/DocGeneratorSO.md
+          - EventAnalysisData: contents/scriptingapi/scriptdocgenerator/EventAnalysisData.md
+          - EventAnalysisDataComparer: contents/scriptingapi/scriptdocgenerator/EventAnalysisDataComparer.md
+          - FieldAnalysisData: contents/scriptingapi/scriptdocgenerator/FieldAnalysisData.md
+          - FieldAnalysisDataComparer: contents/scriptingapi/scriptdocgenerator/FieldAnalysisDataComparer.md
+          - ISummaryAttribute: contents/scriptingapi/scriptdocgenerator/ISummaryAttribute.md
+          - MemberAnalysisData: contents/scriptingapi/scriptdocgenerator/MemberAnalysisData.md
+          - MemberAnalysisDataComparer: contents/scriptingapi/scriptdocgenerator/MemberAnalysisDataComparer.md
+          - MethodAnalysisData: contents/scriptingapi/scriptdocgenerator/MethodAnalysisData.md
+          - MethodAnalysisDataComparer: contents/scriptingapi/scriptdocgenerator/MethodAnalysisDataComparer.md
+          - PropertyAnalysisData: contents/scriptingapi/scriptdocgenerator/PropertyAnalysisData.md
+          - PropertyAnalysisDataComparer: contents/scriptingapi/scriptdocgenerator/PropertyAnalysisDataComparer.md
+          - ScriptDocGenInspectorSO: contents/scriptingapi/scriptdocgenerator/ScriptDocGenInspectorSO.md
+          - SummaryAttributeConverter: contents/scriptingapi/scriptdocgenerator/SummaryAttributeConverter.md
+          - TypeAnalyzerExtensions: contents/scriptingapi/scriptdocgenerator/TypeAnalyzerExtensions.md
+          - TypeAnalyzerUtility: contents/scriptingapi/scriptdocgenerator/TypeAnalyzerUtility.md
+          - TypeCategory: contents/scriptingapi/scriptdocgenerator/TypeCategory.md
+          - TypesConfigSO: contents/scriptingapi/scriptdocgenerator/TypesConfigSO.md
       - Modules:
           - ScriptDocGenerator:
               - Editor:
