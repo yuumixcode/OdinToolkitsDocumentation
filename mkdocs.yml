@@ -164,7 +164,7 @@ nav:
       - 一键生成 SO 工具: contents/manuals/QuickGenerateSO.md
       - 脚本文档生成器:
           - 使用指南: contents/manuals/ScriptDocGeneratorUsage.md
-          - 类型解析器支持情况总览: manuals/TypeAnalysisOverview.md
+          - 类型解析器支持情况总览: manuals/ScriptDocGenerator/TypeAnalysisOverview.md
   - Scripting API:
       - Script Doc Generator:
           - ChineseSummaryMenuItems: contents/scriptingapi/scriptdocgenerator/ChineseSummaryMenuItems.md

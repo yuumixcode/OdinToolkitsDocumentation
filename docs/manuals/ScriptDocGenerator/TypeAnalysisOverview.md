@@ -15,7 +15,7 @@ slug: type-analysis-overview
 
 ### 1.支持多种访问修饰符
 
-单元测试 6 种
+!!! note "单元测试支持 6 种"
 
 ``` csharp
 int _privateField;
@@ -28,7 +28,6 @@ public int PublicField;
 
 ---
 
-``` markdown
  | 字段完整签名 |
  | :----------|
  | `private int _privateField;` |
@@ -37,11 +36,10 @@ public int PublicField;
  | `protected int ProtectedField;` |
  | `protected internal int ProtectedInternalField;` |
  | `public int PublicField;` |
-```
 
 ### 2.支持复合关键字
 
-单元测试 4 种
+!!! note "单元测试支持 4 种"
 
 ``` csharp
 public const int CONST_FIELD = 42;
@@ -52,20 +50,23 @@ public static readonly int StaticReadOnlyField;
 
 ---
 
-``` markdown
 | 字段完整签名 |
 | :---------- |
 | `public const int CONST_FIELD = 42;` |
 | `public static int StaticField;` |
 | `public readonly int ReadOnlyField;` |
 | `public static readonly int StaticReadOnlyField;` |
-```
 
-### 3.支持字段初始值或自定义默认值
+### 3.支持值类型字段自定义默认值或构造方法初始值
 
-单元测试 8 种
+!!! note "单元测试支持 8 种"
 
-``` csharp
+!!! warning "注意"
+
+    1. 只支持在**无参构造函数**中进行初始化的值类型字段
+    2. 不支持引用类型的自定义默认值或构造方法初始值
+
+``` csharp hl_lines="24-31"
 class TestClass
 {
     // 常量字段
@@ -102,9 +103,6 @@ class TestClass
 
 ---
 
-> 在无参构造函数中进行初始化的字段也被算入自定义默认值
-
-``` markdown
 | 字段完整签名 |
 | :---------- |
 | `public const int CONST_FIELD = 100;` |
