@@ -1,0 +1,123 @@
+{#-
+This file was automatically generated - do not edit
+-#}
+<footer class="md-footer">
+    {% if "navigation.footer" in features %}
+    {% if page.previous_page or page.next_page %}
+    {% if page.meta and page.meta.hide %}
+    {% set hidden = "hidden" if "footer" in page.meta.hide %}
+    {% endif %}
+    <nav class="md-footer__inner md-grid" aria-label="{{ lang.t('footer') }}" {{ hidden }}>
+        {% if page.previous_page %}
+        {% set direction = lang.t("footer.previous") %}
+        <a href="{{ page.previous_page.url | url }}" class="md-footer__link md-footer__link--prev"
+            aria-label="{{ direction }}: {{ page.previous_page.title | e }}">
+            <div class="md-footer__button md-icon">
+                {% set icon = config.theme.icon.previous or "material/arrow-left" %}
+                {% include ".icons/" ~ icon ~ ".svg" %}
+            </div>
+            <div class="md-footer__title">
+                <span class="md-footer__direction">
+                    {{ direction }}
+                </span>
+                <div class="md-ellipsis">
+                    {{ page.previous_page.title }}
+                </div>
+            </div>
+        </a>
+        {% endif %}
+        {% if page.next_page %}
+        {% set direction = lang.t("footer.next") %}
+        <a href="{{ page.next_page.url | url }}" class="md-footer__link md-footer__link--next"
+            aria-label="{{ direction }}: {{ page.next_page.title | e }}">
+            <div class="md-footer__title">
+                <span class="md-footer__direction">
+                    {{ direction }}
+                </span>
+                <div class="md-ellipsis">
+                    {{ page.next_page.title }}
+                </div>
+            </div>
+            <div class="md-footer__button md-icon">
+                {% set icon = config.theme.icon.next or "material/arrow-right" %}
+                {% include ".icons/" ~ icon ~ ".svg" %}
+            </div>
+        </a>
+        {% endif %}
+    </nav>
+    {% endif %}
+    {% endif %}
+    <div class="md-footer-meta md-typeset">
+        <div class="md-footer-meta__inner md-grid">
+            {% include "partials/copyright.html" %}
+            <script src="https://cdn.staticfile.net/translate.js/3.12.0/translate.js"></script>
+            <script>
+                // 翻译配置 - 包装在立即执行函数中避免全局污染
+                (function () {
+                    // 通过 class 设置不翻译的元素
+                    translate.ignore.class.push('md-select', 'footer-highlight', 'md-footer-copyright');
+                    // 自定义术语库，纠正翻译结果
+                    translate.nomenclature.append('chinese_simplified', 'english', `
+                快讯=Newsflash
+                访问量=Page Views
+                本站已经运行=Site has been running
+                天=days
+                时=hours
+                分=minutes
+                秒=seconds
+                萌ICP备=Moe ICP
+                版权所有=Copyright
+                制作工具=Made with
+                使用手册=Manuals
+                标签总览=Tags
+                开发者博客=Developer Blog
+                注释=Comments
+                介绍=Introduction
+        `);
+                    // 设置本地语种
+                    translate.language.setLocal('chinese_simplified');
+                    // 设置首次使用时自动识别语种
+                    translate.setAutoDiscriminateLocalLanguage();
+                    // 不显示 select 语言选择框
+                    translate.selectLanguageTag.show = false;
+                    // 设置机器翻译服务通道
+                    translate.service.use('client.edge');
+                    // 执行翻译
+                    translate.execute();
+                    // 监听语言切换事件，确保动态内容也能被翻译
+                    window.addEventListener('translate.languagechange', function () {
+                        // 延迟重新翻译动态更新的内容
+                        setTimeout(() => {
+                            translate.execute();
+                        }, 500);
+                    });
+                    console.log('翻译功能已初始化');
+                })();
+                function protectSpecialContent() {
+                    // 保护数字不被翻译
+                    const highlightElements = document.querySelectorAll('.footer-highlight');
+                    highlightElements.forEach(el => {
+                        if (!el.classList.contains('no-translate')) {
+                            el.classList.add('no-translate');
+                        }
+                    });
+
+                    // 保护 ICP 号码
+                    const icpLinks = document.querySelectorAll('.icp-link');
+                    icpLinks.forEach(el => {
+                        const icpNumber = el.textContent.match(/\d+/);
+                        if (icpNumber) {
+                            el.innerHTML = el.innerHTML.replace(
+                                /(\d+)/g,
+                                '<span class="no-translate">$1</span>'
+                            );
+                        }
+                    });
+                }
+            </script>
+            {% if config.extra.social %}
+            {% include "partials/social.html" %}
+            {% endif %}
+        </div>
+    </div>
+</footer>
