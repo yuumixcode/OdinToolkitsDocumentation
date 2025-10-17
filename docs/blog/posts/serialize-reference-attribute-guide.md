@@ -1,6 +1,5 @@
 ---
 date: 2025-09-24
-title: Unity SerializeReferenceAttribute 深度解析：多态序列化的实践指南
 description: 全面解析 Unity SerializeReferenceAttribute 特性的使用方法、实现原理和最佳实践，深入探讨多态序列化在游戏开发中的应用场景
 categories:
   - Unity 
@@ -601,6 +600,7 @@ public class OptimizedPlayerController : MonoBehaviour
 **原因**：没有具体的实现类或类型不可序列化
 
 **解决方案**：
+
 ```csharp
 // 确保实现类标记为 [System.Serializable]
 [System.Serializable]
@@ -615,6 +615,7 @@ public class SwordWeapon : IWeapon
 **原因**：类型重命名或命名空间变更
 
 **解决方案**：
+
 ```csharp
 // 使用 FormerlySerializedAs 特性保持兼容性
 [System.Serializable]
@@ -630,6 +631,7 @@ public class RenamedWeapon : IWeapon
 **原因**：频繁的类型检查和转换
 
 **解决方案**：
+
 ```csharp
 public class PerformanceOptimized : MonoBehaviour
 {

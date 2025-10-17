@@ -14,6 +14,8 @@ slug: try-catch-practice-guide
 
 在 Unity 开发中，错误处理至关重要。一个健壮的游戏应该能够优雅地处理意外情况，而不是直接崩溃或产生难以调试的行为。Try-Catch 作为 C# 中的核心异常处理机制，配合 Odin Inspector 插件，可以帮助我们构建更稳定、更易于调试的 Unity 项目。
 
+<!-- more -->
+
 ## 一、Try-Catch 基础用法
 
 ### 基本语法
