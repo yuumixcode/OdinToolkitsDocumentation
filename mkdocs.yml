@@ -87,11 +87,11 @@ plugins:
       date_format: "%Y-%m-%d"
       show_author: true
 
-extra_css:
-  - extra/stylesheets/customFonts.css # 自定义字体
-  - extra/stylesheets/tocStyles.css # TOC目录样式
-  - extra/stylesheets/tableStyles.css # 表格样式
-  - https://static.zeoseven.com/zsft/292/main/result.css # 自定义字体-霞鹜文楷
+# extra_css:
+#   - https://static.zeoseven.com/zsft/292/main/result.css # 自定义字体-霞鹜文楷
+#   - extra/stylesheets/customFonts.css # 自定义字体
+#   - extra/stylesheets/tocStyles.css # TOC目录样式
+#   - extra/stylesheets/tableStyles.css # 表格样式
 
 markdown_extensions:
   # Admonitions 告诫 ---
