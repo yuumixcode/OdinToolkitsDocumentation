@@ -67,8 +67,6 @@ theme:
     - search.suggest # 搜索建议
     - search.highlight # 搜索高亮
     - search.share # 搜索分享
-    # announcement
-    - announce.dismiss
     # footer
     - navigation.footer
 
