@@ -42,7 +42,7 @@ theme:
 
   # Setup -> logo - 网站图标
   logo: https://cdn.jsdelivr.net/gh/yuumixcode/OdinToolkitsDocumentation@main/cdn-assets/logo-color-noshadow.webp
-  favicon: https://cdn.jsdelivr.net/gh/yuumixcode/OdinToolkitsDocumentation@main/cdn-assets/logo-color-noshadow.svg
+  favicon: https://cdn.jsdelivr.net/gh/yuumixcode/OdinToolkitsDocumentation@main/cdn-assets/logo-color-noshadow.png
 
   # Overrides
   custom_dir: docs/overrides
