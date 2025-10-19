@@ -48,16 +48,16 @@ body, .md-typeset {
 }
 
 /* 左侧导航当前选中项背景 - 只选中单个文档项 */
-.md-nav--primary .md-nav__item--active > .md-nav__link[href] {
+/* .md-nav--primary .md-nav__item--active > .md-nav__link[href] {
   background-color: rgba(0, 0, 0, 0.05);
   border-radius: 6px;
   padding: 0.1rem 0;
-}
+} */
 
 /* 确保分组标题不显示背景 */
-.md-nav--primary .md-nav__item--active > .md-nav__link:not([href]) {
+/* .md-nav--primary .md-nav__item--active > .md-nav__link:not([href]) {
   background-color: transparent;
-}
+} */
 
 /* 代码区域字体设置 */
 code,

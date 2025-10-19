@@ -1,5 +1,5 @@
 /* 使用从 customFonts.css 继承的CSS变量 */
-.md-nav--secondary {
+/* .md-nav--secondary {
   border-left: 1px solid var(--md-default-fg-color--lightest);
   padding-left: 1rem;
 }
@@ -29,4 +29,4 @@
 
 .md-nav--secondary .md-nav__link:hover:before {
   opacity: 1;
-}
+} */
