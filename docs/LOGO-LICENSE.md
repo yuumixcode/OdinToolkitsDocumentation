@@ -5,7 +5,7 @@
 | 项目 | 详情 |
 |------|------|
 | **项目名称** | Odin Toolkits |
-| **Logo设计者** | YuumixCode |
+| **Logo 设计者** | YuumixCode |
 | **创建日期** | 2025年 |
 | **版权归属** | YuumixCode |
 | **许可证** | MIT License |

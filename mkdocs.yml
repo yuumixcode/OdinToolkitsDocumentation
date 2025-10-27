@@ -1,7 +1,6 @@
 site_name: Odin Toolkits Documentation
 site_url: https://www.odintoolkits.cn/
-site_description: Odin Toolkits 的文档网站仓库。Odin Toolkits 是 Odin Inspector and Serializer 的第三方扩展工具集。
-
+site_description: Odin Toolkits Documentation 官方文档网站。Odin Toolkits 是开源的、第三方扩展工具集，主要面向 Odin Inspector and Serializer 的中文用户，提供了一系列实用的工具和功能。
 site_author: Yuumix
 copyright: Copyright &copy; 2025 Yuumix
 
@@ -31,22 +30,15 @@ theme:
       toggle:
         icon: material/weather-sunny
         name: 自动遵循系统偏好
-
-  # Setup -> fonts - 字体
   font:
     text: Noto Sans SC
     code: Roboto Mono
-
-  # Setup -> language - 语言
   language: zh
-
-  # Setup -> logo - 网站图标
   logo: https://cdn.jsdelivr.net/gh/yuumixcode/OdinToolkitsDocumentation@main/cdn-assets/logo-color-noshadow.webp
   favicon: https://cdn.jsdelivr.net/gh/yuumixcode/OdinToolkitsDocumentation@main/cdn-assets/logo-color-noshadow.png
 
   # Overrides
   custom_dir: docs/overrides
-
   features:
     - content.tooltips # 启用工具提示，如果要 Setup - colors - 配色方案 中的 accent 生效，必须启用此项
     # Setup - navigation - 导航
@@ -54,15 +46,11 @@ theme:
     - navigation.instant.progress # 即时加载进度条，仅当页面在 400 毫秒后仍未完成加载时显示
     - navigation.tracking # 锚点追踪，地址栏中的 URL 会自动更新为活动锚点，便于分享
     - navigation.tabs # 顶部标签导航
-    # - navigation.tabs.sticky # 与 navigation.tabs 一起使用，启用表示顶部标签导航栏在滚动时保持可见，一般关闭
-    # - navigation.sections # 侧边栏变为章节，文档较少时效果更好
-    # - navigation.expand # 启用表示侧边栏分组默认展开
     - navigation.prune # 导航修剪，对于大型文档站点效果更好，不能与 navigation.expand 一起使用
     - navigation.indexes # 章节索引，让用于分类的目录可以指向一份文档，对于概述非常有用，不能和 toc.integrate 一起使用
     - navigation.top # 立刻返回顶部的按钮
     # ---
     - toc.follow # 锚点跟随，通常是指右侧的目录，启用后会在滚动时自动跟随当前锚点
-    # - toc.integrate # 集成目录，启用后会将章节目录集成左侧，不能和 navigation.indexes 一起使用
     # Setup - search - 搜索
     - search.suggest # 搜索建议
     - search.highlight # 搜索高亮
@@ -85,11 +73,11 @@ plugins:
       date_format: "%Y-%m-%d"
       show_author: true
 
-# extra_css:
-#   - https://static.zeoseven.com/zsft/292/main/result.css # 自定义字体-霞鹜文楷
-#   - extra/stylesheets/customFonts.css # 自定义字体
-#   - extra/stylesheets/tocStyles.css # TOC目录样式
-#   - extra/stylesheets/tableStyles.css # 表格样式
+extra_css:
+  - https://static.zeoseven.com/zsft/292/main/result.css # 自定义字体-霞鹜文楷
+  - extra/stylesheets/customFonts.css # 自定义字体
+  - extra/stylesheets/tocStyles.css # TOC目录样式
+  - extra/stylesheets/tableStyles.css # 表格样式
 
 markdown_extensions:
   # Admonitions 告诫 ---
@@ -137,6 +125,7 @@ markdown_extensions:
   - abbr
   - toc:
       permalink: true
+      slugify: !!python/object/apply:pymdownx.slugs.slugify {} # 锚点链接：统一字符编码，区分大小写
 
 extra:
   alternate:
@@ -157,40 +146,17 @@ extra:
 nav:
   - README: index.md
   - CHANGELOG: CHANGELOG.md
-  - CONTRIBUTING: CONTRIBUTING.md
+  - 其他说明文档:
+      - 许可证声明: LICENSE.md
+      - LOGO 图标许可证声明: LOGO-LICENSE.md
+      - 贡献指南: CONTRIBUTING.md
   - 使用手册:
-      - 一键生成 SO 工具: contents/manuals/QuickGenerateSO.md
       - 脚本文档生成器:
-          - 使用指南: contents/manuals/ScriptDocGeneratorUsage.md
-          - 类型解析器支持情况总览: manuals/ScriptDocGenerator/TypeAnalysisOverview.md
-  - Scripting API:
-      - Script Doc Generator:
-          - ChineseSummaryMenuItems: contents/scriptingapi/scriptdocgenerator/ChineseSummaryMenuItems.md
-          - CnAPIDocGeneratorSO: contents/scriptingapi/scriptdocgenerator/CnAPIDocGeneratorSO.md
-          - ConstructorAnalysisData: contents/scriptingapi/scriptdocgenerator/ConstructorAnalysisData.md
-          - ConstructorAnalysisDataComparer: contents/scriptingapi/scriptdocgenerator/ConstructorAnalysisDataComparer.md
-          - DocGeneratorSO: contents/scriptingapi/scriptdocgenerator/DocGeneratorSO.md
-          - EventAnalysisData: contents/scriptingapi/scriptdocgenerator/EventAnalysisData.md
-          - EventAnalysisDataComparer: contents/scriptingapi/scriptdocgenerator/EventAnalysisDataComparer.md
-          - FieldAnalysisData: contents/scriptingapi/scriptdocgenerator/FieldAnalysisData.md
-          - FieldAnalysisDataComparer: contents/scriptingapi/scriptdocgenerator/FieldAnalysisDataComparer.md
-          - ISummaryAttribute: contents/scriptingapi/scriptdocgenerator/ISummaryAttribute.md
-          - MemberAnalysisData: contents/scriptingapi/scriptdocgenerator/MemberAnalysisData.md
-          - MemberAnalysisDataComparer: contents/scriptingapi/scriptdocgenerator/MemberAnalysisDataComparer.md
-          - MethodAnalysisData: contents/scriptingapi/scriptdocgenerator/MethodAnalysisData.md
-          - MethodAnalysisDataComparer: contents/scriptingapi/scriptdocgenerator/MethodAnalysisDataComparer.md
-          - PropertyAnalysisData: contents/scriptingapi/scriptdocgenerator/PropertyAnalysisData.md
-          - PropertyAnalysisDataComparer: contents/scriptingapi/scriptdocgenerator/PropertyAnalysisDataComparer.md
-          - ScriptDocGenInspectorSO: contents/scriptingapi/scriptdocgenerator/ScriptDocGenInspectorSO.md
-          - SummaryAttributeConverter: contents/scriptingapi/scriptdocgenerator/SummaryAttributeConverter.md
-          - TypeAnalyzerExtensions: contents/scriptingapi/scriptdocgenerator/TypeAnalyzerExtensions.md
-          - TypeAnalyzerUtility: contents/scriptingapi/scriptdocgenerator/TypeAnalyzerUtility.md
-          - TypeCategory: contents/scriptingapi/scriptdocgenerator/TypeCategory.md
-          - TypesConfigSO: contents/scriptingapi/scriptdocgenerator/TypesConfigSO.md
-      - Modules:
-          - ScriptDocGenerator:
-              - Editor:
-                  - DocGeneratorSO: scriptingapi/modules/scriptdocgenerator/editor/DocGeneratorSO.md
+          - 使用指南: contents/manuals/scriptdocgenerator/ScriptDocGeneratorUsage.md
+          - 类型解析器支持情况总览: contents/manuals/scriptdocgenerator/TypeAnalysisOverview.md
+      - 二级工具模块:
+          - 一键生成 SO 工具: contents/manuals/modules/QuickGenerateSO.md
+          - 模板代码生成器: contents/manuals/modules/TemplateCodeGen.md
   - 标签总览:
       - blog/tags.md
   - 开发者博客:
