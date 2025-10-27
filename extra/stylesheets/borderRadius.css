@@ -1,0 +1,22 @@
+/* 行内代码 */
+.md-typeset code {
+  border-radius: 6px;
+}
+
+/* 代码块容器 */
+.md-typeset pre {
+  border-radius: 10px ;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15) ;
+}
+
+/* 语法高亮代码块 */
+.md-typeset .highlight {
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+
+/* 代码块内容 */
+.md-typeset .highlight pre {
+  border-radius: 10px !important;
+  box-shadow: none ; 
+}

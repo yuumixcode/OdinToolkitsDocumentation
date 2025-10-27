@@ -1,0 +1,32 @@
+/* 使用从 customFonts.css 继承的CSS变量 */
+.md-nav--secondary {
+  border-left: 1px solid var(--md-default-fg-color--lightest);
+  padding-left: 1rem;
+}
+
+.md-nav--secondary .md-nav__link {
+  font-size: var(--base-font-size);
+  padding-left: 0.3rem;
+  position: relative;
+  transition: padding-left 0.25s;
+}
+
+.md-nav--secondary .md-nav__link:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: var(--md-accent-fg-color);
+  opacity: 0;
+  transition: opacity 0.25s;
+}
+
+.md-nav--secondary .md-nav__link:hover {
+  padding-left: 1rem;
+}
+
+.md-nav--secondary .md-nav__link:hover:before {
+  opacity: 1;
+}

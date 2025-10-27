@@ -1,0 +1,24 @@
+/* 表格单元格样式 */
+.md-typeset table th,
+.md-typeset table td {
+  overflow-wrap: break-word;
+  /* 允许长文本在单元格内换行 */
+  font-size: 0.6rem;
+}
+
+/* 表格内代码样式 */
+.md-typeset table code {
+  font-size: 0.6rem;
+}
+
+/* 表格标题行样式 */
+.md-typeset table th {
+  background-color: var(--md-primary-fg-color--light, #7094FF);
+  color: var(--md-primary-bg-color, #ffffff);
+  font-weight: bold;
+}
+
+/* 表格交替行颜色 */
+.md-typeset table tr:nth-child(even) {
+  background-color: rgba(0, 0, 0, 0.02);
+}
