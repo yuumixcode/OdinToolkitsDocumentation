@@ -7,13 +7,64 @@ hide:
 
 这个项目的所有显著变化都将记录在这个文件中。
 
-格式基于 [Keep a Changelog](https://keepachangelog.com/en/1.1.0/)，以及这个项目 `尽量` 遵循 [Semantic Versioning](https://semver.org/spec/v2.0.0.html)。
+格式基于 [Keep a Changelog](https://keepachangelog.com/en/1.1.0/)，以及这个项目尽量遵循 [Semantic Versioning](https://semver.org/spec/v2.0.0.html)。
 
 ---
 
 All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
+
+## [0.5.0 - alpha] - 2025-10-22
+
+- Alpha 阶段不保证向前兼容性。
+
+### 核心架构
+
+#### Changed
+
+- 优化插件结构，设置一级模块和二级模块概念，突出重要模块，一级模块位于 OdinToolkits 文件夹下，二级模块位于 OdinToolkits/SecondaryModules 文件夹下。
+- Community 模块，移动到和 OdinToolkits 同级，用于存储社区贡献、社区推荐或者第三方引用的内容。
+- 更新项目 Unity 版本为 2021.3.45f2c1
+- 修改 `AttributeOverviewPro` 为一级模块，位于 OdinToolkits 文件夹下。
+
+### Script Doc Generator 脚本文档生成器
+
+#### Added
+
+- 新增 `MemberData` 类，与 `MemberInfo` 类对应，作为抽象类，存储各类成员共有的的解析数据。
+- 新增 `TypeData` 类，与 `TypeInfo` 类对应，存储类型的解析数据。
+- 新增 `ConstructorData` 类，与 `ConstructorInfo` 类对应，存储构造方法的解析数据。
+- 新增 `EventData` 类，与 `EventInfo` 类对应，存储事件的解析数据。
+- 新增 `MethodData` 类，与 `MethodInfo` 类对应，存储方法的解析数据，但是不包含构造方法。
+- 新增 `ParameterData` 类，与 `ParameterInfo` 类对应，存储参数的解析数据。
+- 新增 `PropertyData` 类，与 `PropertyInfo` 类对应，存储属性的解析数据。
+- 新增 `FieldData` 类，与 `FieldInfo` 类对应，存储字段的解析数据。
+- 新增 `TypeData` 类的单元测试，一共 14 个测试用例，覆盖了基本的类型解析场景。
+- 新增 `ConstructorData` 类的单元测试，一共 4 个测试用例，覆盖了基本的构造方法解析场景。
+- 新增 `EventData` 类的单元测试，一共 6 个测试用例，覆盖了基本的事件解析场景。
+- 新增 `MethodData` 类的单元测试，一共 23 个测试用例，覆盖了基本的方法解析场景.
+- 新增 `PropertyData` 类的单元测试，一共 19 个测试用例，覆盖了基本的属性解析场景。
+- 新增 `FieldData` 类的单元测试，一共 101 个测试用例，覆盖了基本的字段解析场景。
+- 新增 `IsFromInheritance(this MemberInfo memberInfo)` 方法的单元测试，一共 4 个测试用例，确保方法可以正确判断成员是否来自继承关系。
+- 新增 `DocGeneratorSettingSO` 的设置字段，包括是否生成命名空间文件夹，是否自定义文档扩展名，是否自动生成增量标识符。增加了文档生成的灵活性，可以根据需要自定义文档的组织方式和文件名。
+
+#### Changed
+
+- 遵循 SOLID 原则，使用工厂模式，优化代码结构，增强代码结构扩展性，但是增加了代码冗余，可以作为工厂模式参考的示例。
+- 修改部分脚本命名。
+- 补充部分脚本注释
+
+### 网页设计
+
+#### Added
+
+- 新增 `LOGO-LICENSE.md` 文件，声明 LOGO 图标版权信息和使用许可证。
+- 新增 `LICENSE.md` 文件，声明项目代码版权信息和使用许可证。
+
+#### Changed
+
+- 修正页面的 Readme 栏目内容，使其适配最新版本。
 
 ## [0.4.0 - alpha] - 2025-09-21
 
@@ -23,7 +74,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 
 - `Attribute Overview Pro` 处于重制阶段（其原模块为 `Chinese Attribute Overview`），当前仍存在错误；但该错误仅属于展示层面问题，大部分特性正常显示，不影响其他未报错内容，且不影响打包流程
 
-### Change
+### Changed
 
 - 优化代码架构，更新版本需要重新导入
 - 移动 `Wigdet` 部分到 `YuumixEditor` 中，重命名为 `InspectorWigdet`，设计为仅限编辑器阶段使用，打包后剔除，需要使用 `UNITY_EDITOR` 宏定义包裹
@@ -36,7 +87,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 
 ### 重要更新 - Script Doc Generator 脚本文档生成器
 
-#### Change
+#### Changed
 
 - 升级为独立模块，重构代码逻辑和用户 UI 界面
 
